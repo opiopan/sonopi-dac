@@ -9078,6 +9078,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="101.6" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
 <label x="114.3" y="109.22" size="1.778" layer="95" rot="MR0"/>
 </segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="EN"/>
+<wire x1="30.48" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<label x="20.32" y="60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="EN48" class="0">
 <segment>
@@ -9129,13 +9134,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="27.94" y1="121.92" x2="27.94" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EN44" class="0">
-<segment>
-<pinref part="X2" gate="G$1" pin="EN"/>
-<wire x1="30.48" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
-<label x="20.32" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="LEFT-CH"/>
@@ -9163,6 +9161,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,220.98,152.4,X1,5V0A,+5V,,,"/>
+<approved hash="104,1,233.68,152.4,X1,3V3_A,+3V3,,,"/>
+<approved hash="104,1,243.84,129.54,X1,GND_A,GND,,,"/>
+<approved hash="104,1,223.52,152.4,X1,5V0B,+5V,,,"/>
+<approved hash="104,1,243.84,127,X1,GND_B,GND,,,"/>
+<approved hash="104,1,243.84,124.46,X1,GND_H,GND,,,"/>
+<approved hash="104,1,60.96,60.96,X2,VDD,+3V3,,,"/>
+<approved hash="104,1,60.96,25.4,X3,VDD,+3V3,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
