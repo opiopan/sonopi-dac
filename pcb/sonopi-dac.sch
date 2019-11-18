@@ -139,7 +139,7 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 <hole x="61.5" y="26.5" drill="2.75"/>
 <hole x="3.5" y="3.5" drill="2.75"/>
 <hole x="61.5" y="3.5" drill="2.75"/>
-<pad name="1" x="8.37" y="25.23" drill="1" diameter="1.778" shape="square"/>
+<pad name="1" x="8.37" y="25.23" drill="1" diameter="1.778"/>
 <pad name="2" x="8.37" y="27.77" drill="1" diameter="1.778"/>
 <pad name="3" x="10.91" y="25.23" drill="1" diameter="1.778"/>
 <pad name="4" x="10.91" y="27.77" drill="1" diameter="1.778"/>
@@ -8529,8 +8529,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="gnd" width="0.2" drill="0">
+<clearance class="1" value="0.1"/>
 </class>
 <class number="2" name="pwr" width="0.2" drill="0">
+<clearance class="2" value="0.1"/>
 </class>
 </classes>
 <parts>
@@ -9123,7 +9125,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="20.32" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="LDOO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="LDOO"/>
 <wire x1="109.22" y1="127" x2="119.38" y2="127" width="0.1524" layer="91"/>
