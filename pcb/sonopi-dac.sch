@@ -114,9 +114,9 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="raspi-zero-i2s">
+<library name="raspi-zero-i2s" urn="urn:adsk.eagle:library:15297902">
 <packages>
-<package name="RASPI_BOARD_B+HAT_ZERO" urn="urn:adsk.eagle:footprint:7043364/2" locally_modified="yes">
+<package name="RASPI_BOARD_B+HAT_ZERO" urn="urn:adsk.eagle:footprint:7043364/3" library_version="2">
 <description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
 Official outline, but without cutouts for display &amp;amp; camera flex connector</description>
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20" curve="90"/>
@@ -135,6 +135,10 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 <wire x1="7.1" y1="26.5" x2="9.64" y2="26.5" width="0.127" layer="21"/>
 <wire x1="9.64" y1="26.5" x2="9.64" y2="23.96" width="0.127" layer="21"/>
 <wire x1="0" y1="3" x2="0" y2="27" width="0" layer="20"/>
+<wire x1="50.28" y1="29.04" x2="50.28" y2="23.96" width="0.127" layer="21"/>
+<wire x1="50.28" y1="23.96" x2="57.9" y2="23.96" width="0.127" layer="21"/>
+<wire x1="57.9" y1="23.96" x2="57.9" y2="29.04" width="0.127" layer="21"/>
+<wire x1="57.9" y1="29.04" x2="50.28" y2="29.04" width="0.127" layer="21"/>
 <hole x="3.5" y="26.5" drill="2.75"/>
 <hole x="61.5" y="26.5" drill="2.75"/>
 <hole x="3.5" y="3.5" drill="2.75"/>
@@ -157,14 +161,10 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 <pad name="38" x="54.09" y="27.77" drill="1" diameter="1.778"/>
 <pad name="39" x="56.63" y="25.23" drill="1" diameter="1.778"/>
 <pad name="40" x="56.63" y="27.77" drill="1" diameter="1.778"/>
-<wire x1="50.28" y1="29.04" x2="50.28" y2="23.96" width="0.127" layer="21"/>
-<wire x1="50.28" y1="23.96" x2="57.9" y2="23.96" width="0.127" layer="21"/>
-<wire x1="57.9" y1="23.96" x2="57.9" y2="29.04" width="0.127" layer="21"/>
-<wire x1="57.9" y1="29.04" x2="50.28" y2="29.04" width="0.127" layer="21"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="RASPI_BOARD_B+HAT_SMALL" urn="urn:adsk.eagle:package:7043377/3" type="model">
+<package3d name="RASPI_BOARD_B+HAT_SMALL" urn="urn:adsk.eagle:package:7043377/5" type="model" library_version="2">
 <description>Raspberry Pi board model B+ HAT board&lt;br/&gt;
 Official outline, but without cutouts for display &amp;amp; camera flex connector</description>
 <packageinstances>
@@ -173,7 +173,7 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="RASPI_GPIO_B+#" urn="urn:adsk.eagle:symbol:9355964/1" locally_modified="yes">
+<symbol name="RASPI_GPIO_B+#" urn="urn:adsk.eagle:symbol:9355964/2" library_version="2">
 <description>Generic schematic symbol for the Raspberry Pi GPIO connector&lt;br/&gt;
 Model B+ &amp;nbsp; all pins connected</description>
 <wire x1="-12.7" y1="25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
@@ -204,7 +204,7 @@ Model B+ &amp;nbsp; all pins connected</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RASPI_BOARD_B+#" urn="urn:adsk.eagle:component:9355966/1" locally_modified="yes" prefix="X">
+<deviceset name="RASPI_BOARD_B+#" urn="urn:adsk.eagle:component:9355966/3" prefix="X" library_version="2">
 <description>Raspberry Pi GPIO connector with markings for the outer dimensions of the Raspberry Pi board model B+&lt;br&gt;
 with different sets of drill holes or mounting pads&lt;br/&gt;
 All pins connected</description>
@@ -234,7 +234,7 @@ All pins connected</description>
 <connect gate="G$1" pin="TXD" pad="8"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7043377/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7043377/5"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -418,11 +418,11 @@ All pins connected</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="PCM5122">
+<library name="PCM5122" urn="urn:adsk.eagle:library:15275669">
 <description>&lt;2V RMS DIRECTPATH 112dB Audio Stereo DAC with PCM Interface and Fixed Audio Processing&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
 <packages>
-<package name="SOP65P640X120-28N">
+<package name="SOP65P640X120-28N" urn="urn:adsk.eagle:footprint:15275670/1" library_version="2">
 <description>&lt;b&gt;PW(R-PDSO-G28)&lt;/b&gt;&lt;br&gt;
 </description>
 <smd name="1" x="-2.938" y="4.225" dx="1.475" dy="0.45" layer="1"/>
@@ -471,8 +471,16 @@ All pins connected</description>
 <wire x1="-3.675" y1="4.8" x2="-2.2" y2="4.8" width="0.2" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="SOP65P640X120-28N" urn="urn:adsk.eagle:package:15275672/2" type="model" library_version="2">
+<description>&lt;b&gt;PW(R-PDSO-G28)&lt;/b&gt;&lt;br&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P640X120-28N"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="PCM5122PW">
+<symbol name="PCM5122PW" urn="urn:adsk.eagle:symbol:15275671/1" library_version="2">
 <wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-35.56" x2="25.4" y2="2.54" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-35.56" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
@@ -510,7 +518,7 @@ All pins connected</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PCM5122PW" prefix="U">
+<deviceset name="PCM5122PW" urn="urn:adsk.eagle:component:15275673/2" prefix="U" library_version="2">
 <description>&lt;b&gt;2V RMS DIRECTPATH 112dB Audio Stereo DAC with PCM Interface and Fixed Audio Processing&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=PCM5122&amp;&amp;fileType=pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
@@ -548,6 +556,9 @@ Source: &lt;a href="http://www.ti.com/general/docs/lit/getliterature.tsp?generic
 <connect gate="G$1" pin="VNEG" pad="5"/>
 <connect gate="G$1" pin="XSMT" pad="25"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15275672/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="2V RMS DIRECTPATH 112dB Audio Stereo DAC with PCM Interface and Fixed Audio Processing" constant="no"/>
@@ -8377,9 +8388,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="oscillator">
+<library name="oscillator" urn="urn:adsk.eagle:library:15275959">
 <packages>
-<package name="3225-SMD">
+<package name="3225-SMD" urn="urn:adsk.eagle:footprint:15275960/1" library_version="2">
 <smd name="4" x="-1.1" y="0.95" dx="1.4" dy="1.2" layer="1"/>
 <smd name="1" x="-1.1" y="-0.95" dx="1.4" dy="1.2" layer="1"/>
 <smd name="2" x="1.1" y="-0.95" dx="1.4" dy="1.2" layer="1"/>
@@ -8396,8 +8407,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="0" y="1.778" size="1.016" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="3225-SMD" urn="urn:adsk.eagle:package:15275963/2" type="model" library_version="2">
+<packageinstances>
+<packageinstance name="3225-SMD"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="OSC">
+<symbol name="OSC" urn="urn:adsk.eagle:symbol:15275962/1" library_version="2">
 <wire x1="10.16" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-2.54" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
@@ -8411,7 +8429,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OSC" prefix="X">
+<deviceset name="OSC" urn="urn:adsk.eagle:component:15275965/2" prefix="X" library_version="2">
 <gates>
 <gate name="G$1" symbol="OSC" x="0" y="0"/>
 </gates>
@@ -8423,6 +8441,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="OUT" pad="3"/>
 <connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15275963/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8431,10 +8452,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="RCA-jack">
+<library name="RCA-jack" urn="urn:adsk.eagle:library:15327963">
 <packages>
-<package name="AV2-8.4-10GA">
+<package name="AV2-8.4-10GA" urn="urn:adsk.eagle:footprint:15327965/1" library_version="2">
 <smd name="G1" x="7" y="5" dx="3.2" dy="2.2" layer="1"/>
+<smd name="G2" x="7" y="5" dx="3.2" dy="2.2" layer="16"/>
+<smd name="G3" x="-7" y="5" dx="3.2" dy="2.2" layer="1"/>
+<smd name="G4" x="-7" y="5" dx="3.2" dy="2.2" layer="16"/>
 <wire x1="10.8" y1="4.25" x2="12.7" y2="4.25" width="0" layer="20"/>
 <wire x1="10.8" y1="7.75" x2="12.7" y2="7.75" width="0" layer="20"/>
 <wire x1="10.5" y1="7.45" x2="10.5" y2="4.55" width="0" layer="20"/>
@@ -8451,12 +8475,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="7.95" y1="5.75" x2="8.25" y2="5.45" width="0" layer="20" curve="-90"/>
 <wire x1="5.75" y1="4.55" x2="6.05" y2="4.25" width="0" layer="20" curve="90"/>
 <wire x1="7.95" y1="4.25" x2="8.25" y2="4.55" width="0" layer="20" curve="90"/>
-<smd name="G2" x="7" y="5" dx="3.2" dy="2.2" layer="16"/>
-<rectangle x1="10.35" y1="4.1" x2="13.15" y2="7.9" layer="41"/>
-<rectangle x1="10.35" y1="4.1" x2="13.15" y2="7.9" layer="41"/>
-<rectangle x1="10.35" y1="4.1" x2="13.15" y2="7.9" layer="42"/>
-<pad name="2" x="11" y="10.25" drill="1.6"/>
-<pad name="1" x="-3" y="10.25" drill="1.6"/>
 <wire x1="-12.7" y1="4.25" x2="-10.8" y2="4.25" width="0" layer="20"/>
 <wire x1="-12.7" y1="7.75" x2="-10.8" y2="7.75" width="0" layer="20"/>
 <wire x1="-13" y1="7.45" x2="-13" y2="4.55" width="0" layer="20"/>
@@ -8465,10 +8483,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-10.8" y1="7.75" x2="-10.5" y2="7.45" width="0" layer="20" curve="-90"/>
 <wire x1="-10.5" y1="4.55" x2="-10.8" y2="4.25" width="0" layer="20" curve="-90"/>
 <wire x1="-13" y1="4.55" x2="-12.7" y2="4.25" width="0" layer="20" curve="90"/>
-<rectangle x1="-13.15" y1="4.1" x2="-10.35" y2="7.9" layer="41"/>
-<rectangle x1="-13.15" y1="4.1" x2="-10.35" y2="7.9" layer="41"/>
-<rectangle x1="-13.15" y1="4.1" x2="-10.35" y2="7.9" layer="42"/>
-<smd name="G3" x="-7" y="5" dx="3.2" dy="2.2" layer="1"/>
 <wire x1="-7.95" y1="5.75" x2="-6.05" y2="5.75" width="0" layer="20"/>
 <wire x1="-7.95" y1="4.25" x2="-6.05" y2="4.25" width="0" layer="20"/>
 <wire x1="-8.25" y1="5.45" x2="-8.25" y2="4.55" width="0" layer="20"/>
@@ -8477,31 +8491,45 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-6.05" y1="5.75" x2="-5.75" y2="5.45" width="0" layer="20" curve="-90"/>
 <wire x1="-8.25" y1="4.55" x2="-7.95" y2="4.25" width="0" layer="20" curve="90"/>
 <wire x1="-6.05" y1="4.25" x2="-5.75" y2="4.55" width="0" layer="20" curve="90"/>
-<smd name="G4" x="-7" y="5" dx="3.2" dy="2.2" layer="16"/>
 <wire x1="-13.7" y1="0" x2="13.7" y2="0" width="0.127" layer="21"/>
 <wire x1="-13.7" y1="0" x2="-13.7" y2="10.25" width="0.127" layer="21"/>
 <wire x1="13.7" y1="0" x2="13.7" y2="10.25" width="0.127" layer="21"/>
 <wire x1="-13.7" y1="10.25" x2="-4.572" y2="10.25" width="0.127" layer="21"/>
 <wire x1="-1.397" y1="10.25" x2="9.398" y2="10.25" width="0.127" layer="21"/>
 <wire x1="12.446" y1="10.25" x2="13.7" y2="10.25" width="0.127" layer="21"/>
+<rectangle x1="10.35" y1="4.1" x2="13.15" y2="7.9" layer="41"/>
+<rectangle x1="10.35" y1="4.1" x2="13.15" y2="7.9" layer="41"/>
+<rectangle x1="10.35" y1="4.1" x2="13.15" y2="7.9" layer="42"/>
+<rectangle x1="-13.15" y1="4.1" x2="-10.35" y2="7.9" layer="41"/>
+<rectangle x1="-13.15" y1="4.1" x2="-10.35" y2="7.9" layer="41"/>
+<rectangle x1="-13.15" y1="4.1" x2="-10.35" y2="7.9" layer="42"/>
+<pad name="2" x="11" y="10.25" drill="1.6"/>
+<pad name="1" x="-3" y="10.25" drill="1.6"/>
 <text x="0" y="5.08" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="AV2-8.4-10GA" urn="urn:adsk.eagle:package:15327967/3" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="AV2-8.4-10GA"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="2CH-RCA">
+<symbol name="2CH-RCA" urn="urn:adsk.eagle:symbol:15327966/1" library_version="2">
 <pin name="LEFT-CH" x="-7.62" y="2.54" length="middle"/>
 <pin name="RIGHT-CH" x="-7.62" y="0" length="middle"/>
+<pin name="GND" x="17.78" y="-5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-7.62" x2="12.7" y2="5.08" width="0.254" layer="94"/>
 <wire x1="12.7" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<pin name="GND" x="17.78" y="-5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <text x="5.08" y="7.62" size="1.27" layer="95" align="top-center">&gt;NAME</text>
 <text x="5.08" y="-10.16" size="1.27" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="2CH-RCA" prefix="J">
+<deviceset name="2CH-RCA" urn="urn:adsk.eagle:component:15327968/3" prefix="J" library_version="3">
 <gates>
 <gate name="G$1" symbol="2CH-RCA" x="0" y="0"/>
 </gates>
@@ -8512,6 +8540,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="LEFT-CH" pad="1"/>
 <connect gate="G$1" pin="RIGHT-CH" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15327967/3"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -8536,7 +8567,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="X1" library="raspi-zero-i2s" deviceset="RASPI_BOARD_B+#" device="_ZERO" package3d_urn="urn:adsk.eagle:package:7043377/3"/>
+<part name="J2" library="raspi-zero-i2s" library_urn="urn:adsk.eagle:library:15297902" deviceset="RASPI_BOARD_B+#" device="_ZERO" package3d_urn="urn:adsk.eagle:package:7043377/5"/>
 <part name="U2" library="SOT23_Module" deviceset="LDO-REGULATOR" device="" package3d_urn="urn:adsk.eagle:package:28534/2" value="MCP1703AT-3302E/CB"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -8546,7 +8577,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U1" library="PCM5122" deviceset="PCM5122PW" device=""/>
+<part name="U1" library="PCM5122" library_urn="urn:adsk.eagle:library:15275669" deviceset="PCM5122PW" device="" package3d_urn="urn:adsk.eagle:package:15275672/2"/>
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF/100V"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="10uF/16V"/>
@@ -8564,12 +8595,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="+3V3/A3" library="supply1" deviceset="+3V3/A" device=""/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="2.2uF/25V"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470Ω"/>
-<part name="X2" library="oscillator" deviceset="OSC" device="-3225" value="22.5792MHz"/>
-<part name="J1" library="RCA-jack" deviceset="2CH-RCA" device="AITENDO" value="AV2-8.4-10GA"/>
+<part name="X1" library="oscillator" library_urn="urn:adsk.eagle:library:15275959" deviceset="OSC" device="-3225" package3d_urn="urn:adsk.eagle:package:15275963/2" value="22.5792MHz"/>
+<part name="J1" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" deviceset="2CH-RCA" device="AITENDO" package3d_urn="urn:adsk.eagle:package:15327967/3" value="AV2-8.4-10GA"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF/100V"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X3" library="oscillator" deviceset="OSC" device="-3225" value="24.576MHz"/>
+<part name="X2" library="oscillator" library_urn="urn:adsk.eagle:library:15275959" deviceset="OSC" device="-3225" package3d_urn="urn:adsk.eagle:package:15275963/2" value="24.576MHz"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF/100V"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -8590,7 +8621,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="187.96" y="63.5" size="3.048" layer="94">Line Out</text>
 </plain>
 <instances>
-<instance part="X1" gate="G$1" x="228.6" y="124.46" smashed="yes"/>
+<instance part="J2" gate="G$1" x="228.6" y="124.46" smashed="yes"/>
 <instance part="U2" gate="G$1" x="172.72" y="17.78" smashed="yes">
 <attribute name="NAME" x="147.32" y="45.72" size="1.778" layer="95" align="center"/>
 <attribute name="NAME" x="147.32" y="45.72" size="1.778" layer="95" align="center"/>
@@ -8686,7 +8717,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <attribute name="NAME" x="204.47" y="47.2186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="204.47" y="42.418" size="1.778" layer="96"/>
 </instance>
-<instance part="X2" gate="G$1" x="45.72" y="58.42" smashed="yes">
+<instance part="X1" gate="G$1" x="45.72" y="58.42" smashed="yes">
 <attribute name="NAME" x="45.72" y="66.04" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="45.72" y="53.34" size="1.778" layer="96" align="center"/>
 </instance>
@@ -8704,7 +8735,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND8" gate="1" x="76.2" y="43.18" smashed="yes">
 <attribute name="VALUE" x="73.66" y="40.64" size="1.778" layer="96"/>
 </instance>
-<instance part="X3" gate="G$1" x="45.72" y="22.86" smashed="yes">
+<instance part="X2" gate="G$1" x="45.72" y="22.86" smashed="yes">
 <attribute name="NAME" x="45.72" y="30.48" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="45.72" y="17.78" size="1.778" layer="96" align="center"/>
 </instance>
@@ -8757,9 +8788,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<pinref part="X1" gate="G$1" pin="5V0A"/>
+<pinref part="J2" gate="G$1" pin="5V0A"/>
 <wire x1="220.98" y1="157.48" x2="220.98" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="5V0B"/>
+<pinref part="J2" gate="G$1" pin="5V0B"/>
 <wire x1="220.98" y1="154.94" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="154.94" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="154.94" x2="223.52" y2="152.4" width="0.1524" layer="91"/>
@@ -8782,16 +8813,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="167.64" y1="25.4" x2="129.54" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="GND_A"/>
+<pinref part="J2" gate="G$1" pin="GND_A"/>
 <wire x1="243.84" y1="129.54" x2="251.46" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="129.54" x2="251.46" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="X1" gate="G$1" pin="GND_B"/>
+<pinref part="J2" gate="G$1" pin="GND_B"/>
 <wire x1="251.46" y1="127" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="124.46" x2="251.46" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="127" x2="251.46" y2="127" width="0.1524" layer="91"/>
 <junction x="251.46" y="127"/>
-<pinref part="X1" gate="G$1" pin="GND_H"/>
+<pinref part="J2" gate="G$1" pin="GND_H"/>
 <wire x1="243.84" y1="124.46" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
 <junction x="251.46" y="124.46"/>
 </segment>
@@ -8870,7 +8901,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="76.2" y1="50.8" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="48.26" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="GND"/>
+<pinref part="X1" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="76.2" y1="48.26" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
@@ -8881,7 +8912,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="76.2" y1="15.24" x2="76.2" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="12.7" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="X3" gate="G$1" pin="GND"/>
+<pinref part="X2" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="22.86" x2="30.48" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="76.2" y1="12.7" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
@@ -8949,7 +8980,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="3V3_A"/>
+<pinref part="J2" gate="G$1" pin="3V3_A"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="233.68" y1="152.4" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
 </segment>
@@ -8982,7 +9013,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="152.4" y="121.92"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="VDD"/>
+<pinref part="X1" gate="G$1" pin="VDD"/>
 <wire x1="60.96" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="76.2" y1="60.96" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
@@ -8991,7 +9022,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="76.2" y="60.96"/>
 </segment>
 <segment>
-<pinref part="X3" gate="G$1" pin="VDD"/>
+<pinref part="X2" gate="G$1" pin="VDD"/>
 <wire x1="60.96" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
 <wire x1="76.2" y1="25.4" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
@@ -9002,7 +9033,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="BCLK" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="GPIO18"/>
+<pinref part="J2" gate="G$1" pin="GPIO18"/>
 <wire x1="213.36" y1="137.16" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
 <label x="203.2" y="137.16" size="1.778" layer="95"/>
 </segment>
@@ -9014,7 +9045,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="LRCLK" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="GPIO19"/>
+<pinref part="J2" gate="G$1" pin="GPIO19"/>
 <wire x1="213.36" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
 <label x="203.2" y="129.54" size="1.778" layer="95"/>
 </segment>
@@ -9026,7 +9057,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="DATA" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="GPIO21"/>
+<pinref part="J2" gate="G$1" pin="GPIO21"/>
 <wire x1="213.36" y1="119.38" x2="203.2" y2="119.38" width="0.1524" layer="91"/>
 <label x="203.2" y="119.38" size="1.778" layer="95"/>
 </segment>
@@ -9038,7 +9069,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="SCL"/>
+<pinref part="J2" gate="G$1" pin="SCL"/>
 <wire x1="213.36" y1="114.3" x2="203.2" y2="114.3" width="0.1524" layer="91"/>
 <label x="203.2" y="114.3" size="1.778" layer="95"/>
 </segment>
@@ -9050,7 +9081,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="SDA"/>
+<pinref part="J2" gate="G$1" pin="SDA"/>
 <wire x1="213.36" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
 <label x="203.2" y="111.76" size="1.778" layer="95"/>
 </segment>
@@ -9091,12 +9122,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="121.92" y="111.76" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="OUT"/>
+<pinref part="X1" gate="G$1" pin="OUT"/>
 <wire x1="60.96" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <label x="71.12" y="58.42" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="X3" gate="G$1" pin="OUT"/>
+<pinref part="X2" gate="G$1" pin="OUT"/>
 <wire x1="60.96" y1="22.86" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
 <label x="71.12" y="22.86" size="1.778" layer="95" rot="MR0"/>
 </segment>
@@ -9108,7 +9139,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="121.92" y="109.22" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="EN"/>
+<pinref part="X1" gate="G$1" pin="EN"/>
 <wire x1="30.48" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
 <label x="20.32" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -9120,7 +9151,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="121.92" y="99.06" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<pinref part="X3" gate="G$1" pin="EN"/>
+<pinref part="X2" gate="G$1" pin="EN"/>
 <wire x1="30.48" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
 <label x="20.32" y="25.4" size="1.778" layer="95"/>
 </segment>
