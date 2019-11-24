@@ -2,7 +2,9 @@ Sonopi DAC
 ===
 ![project phase](https://img.shields.io/badge/project%20phase-Designing%20PCB-orange.svg)
 
-<img alt="board image" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-dac/images/sonopi-dac.jpg" width=450 align="right">
+<p align="center">
+<img alt="board image" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-dac/images/sonopi-dac-configuration.jpg" width=800>
+</p>
 
 Sonopi DAC is a hat card for Raspberry Pi to add a audio line output capability.
 This hat board is designed to adapt to both of Raspberry pi and Raspberry pi Zero.<br>
@@ -11,7 +13,8 @@ This hat board is designed to adapt to both of Raspberry pi and Raspberry pi Zer
 This hardware design is published under open source lincence. You can use and modify this design freely. There is also no limitation in commercial use.
 
 ## Project Status
-Circuit schema design was done. Now I'm working on board art work.
+Circuit schema design was done. Now I'm working on board art work.<br>
+And I'm also considering which production is more feasible for some parts.
 
 ## How to setup
 Due to enable drivers for Sonopi DAC in Linux ALSA system, add a following line in ```/boot/config.txt```. Then rebooot a Raspberry Pi.

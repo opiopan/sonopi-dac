@@ -9132,18 +9132,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="71.12" y="22.86" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="EN41" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO6"/>
-<wire x1="109.22" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
-<label x="121.92" y="109.22" size="1.778" layer="95" rot="MR0"/>
-</segment>
-<segment>
-<pinref part="X1" gate="G$1" pin="EN"/>
-<wire x1="30.48" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
-<label x="20.32" y="60.96" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="EN48" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO3"/>
@@ -9216,6 +9204,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="215.9" y1="35.56" x2="226.06" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="33.02" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
 <junction x="215.9" y="35.56"/>
+</segment>
+</net>
+<net name="EN44" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="EN"/>
+<wire x1="30.48" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<label x="20.32" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO6"/>
+<wire x1="109.22" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
+<label x="121.92" y="109.22" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 </nets>

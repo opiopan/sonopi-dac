@@ -113,7 +113,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYmE2M2My" projecturn="a.cGVyc29uYWw6dWUyYmE2M2MyIzIwMTgwOTE3MTQ5MTY5Mjgx" f3durn="urn:adsk.wipprod:dm.lineage:frYCqByTTnG5slPWVEB-oA" pcbguid="7cebb721-e281-4a90-b6c0-b829a01244c8" lastpulledtime="" lastsyncedchangeguid="4c299219-e58e-1293-3d57-04ebac70f302"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYmE2M2My" projecturn="a.cGVyc29uYWw6dWUyYmE2M2MyIzIwMTgwOTE3MTQ5MTY5Mjgx" f3durn="urn:adsk.wipprod:dm.lineage:frYCqByTTnG5slPWVEB-oA" pcbguid="7cebb721-e281-4a90-b6c0-b829a01244c8" lastpulledtime="" lastsyncedchangeguid="46c38bd1-cc02-f853-66d1-19df69127135"/>
 <plain>
 <text x="62.738" y="6.985" size="1.4" layer="21" align="bottom-right">V1.0</text>
 </plain>
@@ -5097,7 +5097,6 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 <rectangle x1="18.4189" y1="10.08333125" x2="18.6144" y2="10.10778125" layer="21"/>
 <rectangle x1="19.8367" y1="10.08333125" x2="20.3744" y2="10.10778125" layer="21"/>
 <rectangle x1="19.9344" y1="10.10778125" x2="20.2767" y2="10.13221875" layer="21"/>
-<text x="0" y="-0.1222" size="0.0489" layer="21" font="vector">/Users/opiopan/Downloads/logo.bmp</text>
 </package>
 <package name="SONOPI-DAC-QRCODE" library_version="1" library_locally_modified="yes">
 <rectangle x1="1.6132" y1="1.61318125" x2="4.451" y2="1.63006875" layer="21"/>
@@ -10332,7 +10331,6 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 <rectangle x1="6.8834" y1="13.353040625" x2="7.6943" y2="13.36993125" layer="21"/>
 <rectangle x1="8.9105" y1="13.353040625" x2="9.3159" y2="13.36993125" layer="21"/>
 <rectangle x1="10.5321" y1="13.353040625" x2="13.3699" y2="13.36993125" layer="21"/>
-<text x="0" y="-0.0845" size="0.0338" layer="21" font="vector">/Users/opiopan/Downloads/QR_Code1574175228.bmp</text>
 </package>
 </packages>
 </library>
@@ -10671,8 +10669,8 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="29.972" y="12.573" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="30.607" y="14.478" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U$1" library="logo" library_urn="urn:adsk.eagle:library:5477443" package="SONOPI-DAC-LOGO" override_package3d_urn="urn:adsk.eagle:package:15331970/2" override_package_urn="urn:adsk.eagle:footprint:15331971/1" value="" x="41.783" y="7.874" smashed="yes"/>
-<element name="U$2" library="logo" library_urn="urn:adsk.eagle:library:5477443" package="SONOPI-DAC-QRCODE" override_package3d_urn="urn:adsk.eagle:package:15331985/2" override_package_urn="urn:adsk.eagle:footprint:15331986/1" value="" x="5.334" y="8.636" smashed="yes"/>
+<element name="U$1" library="logo" library_urn="urn:adsk.eagle:library:5477443" package="SONOPI-DAC-LOGO" override_package3d_urn="urn:adsk.eagle:package:15331970/2" override_package_urn="urn:adsk.eagle:footprint:15331971/1" override_locally_modified="yes" value="" x="41.783" y="7.874" smashed="yes"/>
+<element name="U$2" library="logo" library_urn="urn:adsk.eagle:library:5477443" package="SONOPI-DAC-QRCODE" override_package3d_urn="urn:adsk.eagle:package:15331985/2" override_package_urn="urn:adsk.eagle:footprint:15331986/1" override_locally_modified="yes" value="" x="5.334" y="8.636" smashed="yes"/>
 </elements>
 <signals>
 <signal name="+5V" class="2">
@@ -11121,16 +11119,6 @@ design rules under a new name.</description>
 <wire x1="25.58185" y1="5.6719" x2="30.45455" y2="5.6719" width="0.2" layer="1"/>
 <wire x1="23.47555" y1="3.5656" x2="25.58185" y2="5.6719" width="0.2" layer="1"/>
 </signal>
-<signal name="EN41">
-<contactref element="U1" pad="19"/>
-<contactref element="X1" pad="1"/>
-<wire x1="30.1688" y1="3.08594375" x2="30.1688" y2="2.50205625" width="0.2" layer="1"/>
-<wire x1="30.1688" y1="2.50205625" x2="29.69874375" y2="2.032" width="0.2" layer="1"/>
-<wire x1="30.125" y1="4.682" x2="30.125" y2="3.12974375" width="0.2" layer="1"/>
-<wire x1="30.125" y1="3.12974375" x2="30.1688" y2="3.08594375" width="0.2" layer="1"/>
-<wire x1="29.69874375" y1="2.032" x2="9.761" y2="2.032" width="0.2" layer="1"/>
-<wire x1="9.761" y1="2.032" x2="6.901" y2="4.892" width="0.2" layer="1"/>
-</signal>
 <signal name="EN48">
 <contactref element="U1" pad="15"/>
 <contactref element="X2" pad="1"/>
@@ -11184,6 +11172,16 @@ design rules under a new name.</description>
 <wire x1="30.011" y1="18.669" x2="26.403" y2="18.669" width="0.5" layer="1"/>
 <wire x1="26.403" y1="18.669" x2="25.322" y2="19.75" width="0.5" layer="1"/>
 <wire x1="30.011" y1="18.669" x2="30.011" y2="16.637" width="0.5" layer="1"/>
+</signal>
+<signal name="EN44">
+<contactref element="X1" pad="1"/>
+<contactref element="U1" pad="19"/>
+<wire x1="30.1688" y1="3.08594375" x2="30.1688" y2="2.50205625" width="0.2" layer="1"/>
+<wire x1="30.1688" y1="2.50205625" x2="29.69874375" y2="2.032" width="0.2" layer="1"/>
+<wire x1="30.125" y1="4.682" x2="30.125" y2="3.12974375" width="0.2" layer="1"/>
+<wire x1="30.125" y1="3.12974375" x2="30.1688" y2="3.08594375" width="0.2" layer="1"/>
+<wire x1="9.761" y1="2.032" x2="29.69874375" y2="2.032" width="0.2" layer="1"/>
+<wire x1="6.901" y1="4.892" x2="9.761" y2="2.032" width="0.2" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
