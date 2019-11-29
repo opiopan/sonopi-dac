@@ -11,6 +11,8 @@ bcolor = (6.0/300.0, 13.0/300.0, 106/300.0)
 metal_settings = RenderSettings(color=mcolor)
 bg_settings = RenderSettings(color=bcolor)
 silk_settings = RenderSettings(color=theme.COLORS['white'], alpha=0.80)
+hmap_settings = RenderSettings(color=(1.0, 1.0, 1.0))
+hmapbg_settings = RenderSettings(color=(0, 0, 0))
 mask_settings = RenderSettings(color=(0, 0, 0))
 maskbg_settings = RenderSettings(color=(1.0, 1.0, 1.0))
 
@@ -34,6 +36,19 @@ ctx.dump('outputs/pcb-top-base.png')
 print(' end', flush=True)
 
 #-------------------------------------------------------------
+# generate top height map image
+#-------------------------------------------------------------
+ctx.clear()
+print('\n### Top height map Image ###')
+print('drawing... ', end='', flush=True)
+ctx.render_layer(copper, settings=hmap_settings, bgsettings=hmapbg_settings)
+print(' end', flush=True)
+
+print('dumping... ', end='', flush=True)
+ctx.dump('outputs/pcb-top-hmap.png')
+print(' end', flush=True)
+
+#-------------------------------------------------------------
 # generate top mask image
 #-------------------------------------------------------------
 ctx.clear()
@@ -50,12 +65,12 @@ print('dumping... ', end='', flush=True)
 ctx.dump('outputs/pcb-top-mask.png')
 print(' end', flush=True)
 
-print('masking... ', end='', flush=True)
-base_image = Image.open('outputs/pcb-top-base.png')
-mask_image = Image.open('outputs/pcb-top-mask.png').convert('L')
-base_image.putalpha(mask_image)
-base_image.save('outputs/pcb-top.png')
-print(' end', flush=True)
+#print('masking... ', end='', flush=True)
+#base_image = Image.open('outputs/pcb-top-base.png')
+#mask_image = Image.open('outputs/pcb-top-mask.png').convert('L')
+#base_image.putalpha(mask_image)
+#base_image.save('outputs/pcb-top.png')
+#print(' end', flush=True)
 
 #-------------------------------------------------------------
 # generate bottom base image
@@ -76,6 +91,18 @@ print('dumping... ', end='', flush=True)
 ctx.dump('outputs/pcb-bottom-base.png')
 print(' end', flush=True)
 
+#-------------------------------------------------------------
+# generate bottom height map image
+#-------------------------------------------------------------
+ctx.clear()
+print('\n### Bottom height map Image ###')
+print('drawing... ', end='', flush=True)
+ctx.render_layer(copper, settings=hmap_settings, bgsettings=hmapbg_settings)
+print(' end', flush=True)
+
+print('dumping... ', end='', flush=True)
+ctx.dump('outputs/pcb-bottom-hmap.png')
+print(' end', flush=True)
 
 #-------------------------------------------------------------
 # generate bottom mask image
@@ -94,9 +121,10 @@ print('dumping... ', end='', flush=True)
 ctx.dump('outputs/pcb-bottom-mask.png')
 print(' end', flush=True)
 
-print('masking... ', end='', flush=True)
+#print('masking... ', end='', flush=True)
 base_image = Image.open('outputs/pcb-bottom-base.png')
-mask_image = Image.open('outputs/pcb-bottom-mask.png').convert('L')
-base_image.putalpha(mask_image)
-ImageOps.mirror(base_image).save('outputs/pcb-bottom.png')
-print(' end', flush=True)
+hmap_image = Image.open('outputs/pcb-bottom-hmap.png')
+mask_image = Image.open('outputs/pcb-bottom-mask.png')
+ImageOps.mirror(base_image).save('outputs/pcb-bottom-base.png')
+ImageOps.mirror(hmap_image).save('outputs/pcb-bottom-hmap.png')
+ImageOps.mirror(mask_image).save('outputs/pcb-bottom-mask.png')

@@ -6,7 +6,7 @@ exts = ['GTL', 'GTO', 'GTS', 'GBL', 'GBO', 'GBS']
 boards=[
     ('../../pcb/CAMOutputs/sonopi-dac.', 0, 0, 0),
 ]
-outline = 'outline.dxf'
+outline = gerberex.read('../../pcb/CAMOutputs/sonopi-dac.GML')
 outputs = 'outputs/pcb'
 
 for ext in exts:
@@ -29,14 +29,8 @@ for ext in exts:
         ctx.merge(file)
         print('.', end='', flush=True)
     if ext == 'TXT':
-        #file = gerberex.read(mousebites)
-        #file.draw_mode = DxfFile.DM_MOUSE_BITES
-        #file.width = 0.5
-        #file.format = (3, 3)
-        #ctx.merge(file)
         pass
     else:
-        file = gerberex.read(outline)
-        ctx.merge(file)
+        ctx.merge(outline)
     ctx.dump(outputs + '.' + ext)
     print(' end', flush=True)
