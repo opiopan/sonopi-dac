@@ -4,9 +4,9 @@ from gerberex import DxfFile, GerberComposition, DrillComposition
 
 exts = ['GTL', 'GTO', 'GTS', 'GBL', 'GBO', 'GBS']
 boards=[
-    ('../../pcb/CAMOutputs/sonopi-dac.', 0, 0, 0),
+    ('../../pcb/type2/CAMOutputs/sonopi-dac-type2.', 0, 0, 0),
 ]
-outline = gerberex.read('../../pcb/CAMOutputs/sonopi-dac.GML')
+outline = gerberex.read('../../pcb/type2/CAMOutputs/sonopi-dac-type2.GML')
 outputs = 'outputs/pcb'
 
 for ext in exts:
