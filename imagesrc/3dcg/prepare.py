@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import gerberex
+import gerberex, os
 from gerberex import DxfFile, GerberComposition, DrillComposition
 
 exts = ['GTL', 'GTO', 'GTS', 'GBL', 'GBO', 'GBS']
@@ -8,6 +8,9 @@ boards=[
 ]
 outline = gerberex.read('../../pcb/type2/CAMOutputs/sonopi-dac-type2.GML')
 outputs = 'outputs/pcb'
+
+if not os.path.isdir('outputs'):
+    os.mkdir('outputs')
 
 for ext in exts:
     print('merging %s: ' % ext ,end='', flush=True)

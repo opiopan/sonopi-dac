@@ -113,7 +113,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYmE2M2My" projecturn="a.cGVyc29uYWw6dWUyYmE2M2MyIzIwMTgwOTE3MTQ5MTY5Mjgx" f3durn="urn:adsk.wipprod:dm.lineage:frYCqByTTnG5slPWVEB-oA" pcbguid="7cebb721-e281-4a90-b6c0-b829a01244c8" lastpulledtime="" lastsyncedchangeguid="46c38bd1-cc02-f853-66d1-19df69127135"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYmE2M2My" projecturn="a.cGVyc29uYWw6dWUyYmE2M2MyIzIwMTgwOTE3MTQ5MTY5Mjgx" f3durn="urn:adsk.wipprod:dm.lineage:sNxieVbiRFS_U6zmVQ5HhQ" pcbguid="cf84b80f-ad96-481d-989d-4a0cf6bf29d6" lastpulledtime="" lastsyncedchangeguid="52219b5c-18a8-7e58-fa47-0e398aab598c"/>
 <plain>
 <text x="58.547" y="1.397" size="1.4" layer="21" align="bottom-right">V1.0</text>
 </plain>
@@ -1442,7 +1442,7 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 </library>
 <library name="RCA-jack" urn="urn:adsk.eagle:library:15327963">
 <packages>
-<package name="HLR-3201VXB" urn="urn:adsk.eagle:footprint:15481379/2" locally_modified="yes" library_version="5" library_locally_modified="yes">
+<package name="HLR-3201VXB" urn="urn:adsk.eagle:footprint:15481379/3" library_version="7">
 <hole x="-3.5" y="3.2" drill="1.5"/>
 <hole x="3.5" y="3.2" drill="1.5"/>
 <wire x1="-1" y1="4.7" x2="-1" y2="5.7" width="0" layer="20" curve="-180"/>
@@ -1519,7 +1519,7 @@ Official outline, but without cutouts for display &amp;amp; camera flex connecto
 </package>
 </packages>
 <packages3d>
-<package3d name="HLR-3201VXB" urn="urn:adsk.eagle:package:15481381/2" type="box" library_version="5" library_locally_modified="yes">
+<package3d name="HLR-3201VXB" urn="urn:adsk.eagle:package:15481381/4" type="model" library_version="7">
 <packageinstances>
 <packageinstance name="HLR-3201VXB"/>
 </packageinstances>
@@ -10688,10 +10688,10 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="33.909" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="34.544" y="14.605" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="J1" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" package="HLR-3201VXB" package3d_urn="urn:adsk.eagle:package:15481381/2" value="HLR-3201VXB-004HG" x="44.831" y="30" smashed="yes" rot="R180">
+<element name="J1" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" package="HLR-3201VXB" package3d_urn="urn:adsk.eagle:package:15481381/4" value="HLR-3201VXB-004HG" x="44.831" y="30" smashed="yes" rot="R180">
 <attribute name="NAME" x="44.831" y="22.38" size="1.27" layer="25" rot="R180" align="bottom-center"/>
 </element>
-<element name="J2" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" package="HLR-3201VXB" package3d_urn="urn:adsk.eagle:package:15481381/2" value="HLR-3201VXB-003HG" x="27.813" y="30" smashed="yes" rot="R180">
+<element name="J2" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" package="HLR-3201VXB" package3d_urn="urn:adsk.eagle:package:15481381/4" value="HLR-3201VXB-003HG" x="27.813" y="30" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.813" y="22.38" size="1.27" layer="25" rot="R180" align="bottom-center"/>
 </element>
 <element name="U$1" library="logo" library_urn="urn:adsk.eagle:library:5477443" package="SONOPI-DAC-LOGO" value="" x="0.762" y="9.144" smashed="yes"/>
@@ -10789,8 +10789,6 @@ design rules under a new name.</description>
 <wire x1="32.131" y1="4.79" x2="32.112" y2="4.809" width="0.4" layer="1"/>
 <wire x1="32.762" y1="4.809" x2="32.762" y2="3.552" width="0.4" layer="1"/>
 <wire x1="32.762" y1="3.552" x2="32.131" y2="2.921" width="0.4" layer="1"/>
-<wire x1="24.638" y1="4.318" x2="24.042" y2="3.722" width="0.5" layer="1"/>
-<wire x1="24.042" y1="3.722" x2="21.463" y2="3.722" width="0.5" layer="1"/>
 <via x="16.891" y="3.175" extent="1-16" drill="0.6"/>
 <wire x1="15.494" y1="3.722" x2="16.344" y2="3.722" width="0.5" layer="1"/>
 <wire x1="16.344" y1="3.722" x2="16.891" y2="3.175" width="0.5" layer="1"/>
@@ -10930,6 +10928,18 @@ design rules under a new name.</description>
 <via x="55.372" y="3.683" extent="1-16" drill="0.35"/>
 <via x="52.832" y="3.683" extent="1-16" drill="0.35"/>
 <via x="50.292" y="3.683" extent="1-16" drill="0.35"/>
+<via x="22.733" y="3.683" extent="1-16" drill="0.6"/>
+<wire x1="22.733" y1="3.683" x2="24.003" y2="3.683" width="1" layer="16"/>
+<wire x1="24.003" y1="3.683" x2="24.638" y2="4.318" width="1" layer="16"/>
+<wire x1="22.733" y1="3.683" x2="21.502" y2="3.683" width="0.5" layer="1"/>
+<wire x1="21.502" y1="3.683" x2="21.463" y2="3.722" width="0.5" layer="1"/>
+<via x="28.575" y="8.382" extent="1-16" drill="0.35"/>
+<via x="30.226" y="8.382" extent="1-16" drill="0.35"/>
+<via x="29.21" y="7.112" extent="1-16" drill="0.35"/>
+<via x="31.877" y="6.858" extent="1-16" drill="0.35"/>
+<via x="33.909" y="6.731" extent="1-16" drill="0.35"/>
+<via x="29.21" y="4.953" extent="1-16" drill="0.35"/>
+<via x="35.941" y="7.112" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+3V3/A">
 <contactref element="C2" pad="1"/>
@@ -11027,12 +11037,12 @@ design rules under a new name.</description>
 <contactref element="U1" pad="21"/>
 <wire x1="21.07" y1="27.77" x2="19.757" y2="29.083" width="0.2" layer="1"/>
 <wire x1="8.0688125" y1="29.083" x2="5.842" y2="26.8561875" width="0.2" layer="1"/>
-<wire x1="5.842" y1="2.921" x2="7.112" y2="1.651" width="0.2" layer="1"/>
-<wire x1="7.112" y1="1.651" x2="34.29" y2="1.651" width="0.2" layer="1"/>
-<wire x1="35.362" y1="2.723" x2="35.362" y2="4.809" width="0.2" layer="1"/>
 <wire x1="19.757" y1="29.083" x2="8.0688125" y2="29.083" width="0.2" layer="1"/>
 <wire x1="5.842" y1="26.8561875" x2="5.842" y2="2.921" width="0.2" layer="1"/>
-<wire x1="34.29" y1="1.651" x2="35.362" y2="2.723" width="0.2" layer="1"/>
+<wire x1="5.842" y1="2.921" x2="7.366" y2="1.397" width="0.2" layer="1"/>
+<wire x1="35.362" y1="3.104" x2="35.362" y2="4.809" width="0.2" layer="1"/>
+<wire x1="7.366" y1="1.397" x2="33.655" y2="1.397" width="0.2" layer="1"/>
+<wire x1="33.655" y1="1.397" x2="35.362" y2="3.104" width="0.2" layer="1"/>
 </signal>
 <signal name="LRCLK">
 <contactref element="J3" pad="35"/>
@@ -11108,26 +11118,27 @@ design rules under a new name.</description>
 <wire x1="19.09895" y1="6.538" x2="19.642" y2="6.538" width="0.2" layer="1"/>
 <wire x1="15.78505" y1="6.538" x2="16.63745" y2="7.3904" width="0.2" layer="1"/>
 <wire x1="18.24655" y1="7.3904" x2="19.09895" y2="6.538" width="0.2" layer="1"/>
-<wire x1="27.2256" y1="3.71345" x2="27.37345" y2="3.5656" width="0.2" layer="1"/>
-<wire x1="27.37345" y1="3.5656" x2="28.68255" y2="3.5656" width="0.2" layer="1"/>
-<wire x1="19.642" y1="6.538" x2="23.12605" y2="6.538" width="0.2" layer="1"/>
-<wire x1="23.12605" y1="6.538" x2="24.03345" y2="7.4454" width="0.2" layer="1"/>
-<wire x1="27.2256" y1="6.57135" x2="27.2256" y2="3.71345" width="0.2" layer="1"/>
-<wire x1="24.03345" y1="7.4454" x2="26.35155" y2="7.4454" width="0.2" layer="1"/>
-<wire x1="26.35155" y1="7.4454" x2="27.2256" y2="6.57135" width="0.2" layer="1"/>
-<wire x1="28.68255" y1="3.5656" x2="30.95895" y2="5.842" width="0.2" layer="1"/>
 <wire x1="34.34845" y1="5.842" x2="34.712" y2="5.47845" width="0.2" layer="1"/>
 <wire x1="34.712" y1="5.47845" x2="34.712" y2="4.809" width="0.2" layer="1"/>
-<wire x1="30.95895" y1="5.842" x2="34.34845" y2="5.842" width="0.2" layer="1"/>
+<wire x1="30.95895" y1="5.842" x2="30.988" y2="5.842" width="0.2" layer="1"/>
+<wire x1="30.988" y1="5.842" x2="34.34845" y2="5.842" width="0.2" layer="1"/>
+<wire x1="19.642" y1="6.538" x2="22.037" y2="6.538" width="0.2" layer="1"/>
+<wire x1="22.037" y1="6.538" x2="23.876" y2="4.699" width="0.2" layer="1"/>
+<wire x1="23.876" y1="4.699" x2="23.876" y2="3.937" width="0.2" layer="1"/>
+<wire x1="23.876" y1="3.937" x2="24.384" y2="3.429" width="0.2" layer="1"/>
+<wire x1="28.575" y1="3.429" x2="30.988" y2="5.842" width="0.2" layer="1"/>
+<wire x1="24.384" y1="3.429" x2="28.575" y2="3.429" width="0.2" layer="1"/>
 </signal>
 <signal name="EN48">
 <contactref element="U1" pad="15"/>
 <contactref element="X2" pad="1"/>
-<wire x1="31.462" y1="4.809" x2="31.462" y2="3.649" width="0.2" layer="1"/>
-<wire x1="31.462" y1="3.649" x2="30.48" y2="2.667" width="0.2" layer="1"/>
-<wire x1="30.48" y1="2.667" x2="19.159" y2="2.667" width="0.2" layer="1"/>
-<wire x1="19.159" y1="2.667" x2="17.442" y2="4.384" width="0.2" layer="1"/>
 <wire x1="17.442" y1="4.384" x2="17.442" y2="4.638" width="0.2" layer="1"/>
+<wire x1="17.442" y1="4.638" x2="19.286" y2="2.794" width="0.2" layer="1"/>
+<wire x1="19.286" y1="2.794" x2="29.21" y2="2.794" width="0.2" layer="1"/>
+<wire x1="29.21" y1="2.794" x2="29.591" y2="2.794" width="0.2" layer="1"/>
+<wire x1="29.591" y1="2.794" x2="30.734" y2="2.794" width="0.2" layer="1"/>
+<wire x1="31.462" y1="3.522" x2="31.462" y2="4.809" width="0.2" layer="1"/>
+<wire x1="30.734" y1="2.794" x2="31.462" y2="3.522" width="0.2" layer="1"/>
 </signal>
 <signal name="LDOO">
 <contactref element="U1" pad="26"/>
@@ -11178,12 +11189,12 @@ design rules under a new name.</description>
 <signal name="EN44">
 <contactref element="X1" pad="1"/>
 <contactref element="U1" pad="19"/>
-<wire x1="34.1058" y1="3.21294375" x2="34.1058" y2="2.62905625" width="0.2" layer="1"/>
-<wire x1="34.1058" y1="2.62905625" x2="33.63574375" y2="2.159" width="0.2" layer="1"/>
-<wire x1="34.062" y1="4.809" x2="34.062" y2="3.25674375" width="0.2" layer="1"/>
-<wire x1="34.062" y1="3.25674375" x2="34.1058" y2="3.21294375" width="0.2" layer="1"/>
-<wire x1="13.952" y1="2.159" x2="33.63574375" y2="2.159" width="0.2" layer="1"/>
-<wire x1="11.473" y1="4.638" x2="13.952" y2="2.159" width="0.2" layer="1"/>
+<wire x1="11.473" y1="4.638" x2="14.079" y2="2.032" width="0.2" layer="1"/>
+<wire x1="33.655" y1="2.032" x2="34.29" y2="2.667" width="0.2" layer="1"/>
+<wire x1="34.29" y1="2.667" x2="34.29" y2="3.302" width="0.2" layer="1"/>
+<wire x1="34.062" y1="3.53" x2="34.062" y2="4.809" width="0.2" layer="1"/>
+<wire x1="14.079" y1="2.032" x2="33.655" y2="2.032" width="0.2" layer="1"/>
+<wire x1="34.29" y1="3.302" x2="34.062" y2="3.53" width="0.2" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

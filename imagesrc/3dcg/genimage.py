@@ -16,6 +16,8 @@ hmapbg_settings = RenderSettings(color=(0, 0, 0))
 mask_settings = RenderSettings(color=(0, 0, 0))
 maskbg_settings = RenderSettings(color=(1.0, 1.0, 1.0))
 
+blur_radius = 1
+
 #-------------------------------------------------------------
 # generate top base image
 #-------------------------------------------------------------
@@ -45,7 +47,10 @@ ctx.render_layer(copper, settings=hmap_settings, bgsettings=hmapbg_settings)
 print(' end', flush=True)
 
 print('dumping... ', end='', flush=True)
-ctx.dump('outputs/pcb-top-hmap.png')
+path = 'outputs/pcb-top-hmap.png'
+ctx.dump(path)
+image = Image.open(path)
+image.filter(ImageFilter.GaussianBlur(blur_radius)).save(path)
 print(' end', flush=True)
 
 #-------------------------------------------------------------
@@ -64,13 +69,6 @@ print(' end', flush=True)
 print('dumping... ', end='', flush=True)
 ctx.dump('outputs/pcb-top-mask.png')
 print(' end', flush=True)
-
-#print('masking... ', end='', flush=True)
-#base_image = Image.open('outputs/pcb-top-base.png')
-#mask_image = Image.open('outputs/pcb-top-mask.png').convert('L')
-#base_image.putalpha(mask_image)
-#base_image.save('outputs/pcb-top.png')
-#print(' end', flush=True)
 
 #-------------------------------------------------------------
 # generate bottom base image
@@ -101,7 +99,11 @@ ctx.render_layer(copper, settings=hmap_settings, bgsettings=hmapbg_settings)
 print(' end', flush=True)
 
 print('dumping... ', end='', flush=True)
-ctx.dump('outputs/pcb-bottom-hmap.png')
+path = 'outputs/pcb-bottom-hmap.png'
+ctx.dump(path)
+image = Image.open(path)
+image.filter(ImageFilter.GaussianBlur(blur_radius)).save(path)
+
 print(' end', flush=True)
 
 #-------------------------------------------------------------
@@ -121,7 +123,7 @@ print('dumping... ', end='', flush=True)
 ctx.dump('outputs/pcb-bottom-mask.png')
 print(' end', flush=True)
 
-#print('masking... ', end='', flush=True)
+#print('flipping... ', end='', flush=True)
 base_image = Image.open('outputs/pcb-bottom-base.png')
 hmap_image = Image.open('outputs/pcb-bottom-hmap.png')
 mask_image = Image.open('outputs/pcb-bottom-mask.png')

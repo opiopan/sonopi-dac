@@ -8454,7 +8454,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </library>
 <library name="RCA-jack" urn="urn:adsk.eagle:library:15327963">
 <packages>
-<package name="HLR-3201VXB" urn="urn:adsk.eagle:footprint:15481379/2" locally_modified="yes" library_version="5" library_locally_modified="yes">
+<package name="HLR-3201VXB" urn="urn:adsk.eagle:footprint:15481379/3" library_version="7">
 <hole x="-3.5" y="3.2" drill="1.5"/>
 <hole x="3.5" y="3.2" drill="1.5"/>
 <wire x1="-1" y1="4.7" x2="-1" y2="5.7" width="0" layer="20" curve="-180"/>
@@ -8531,7 +8531,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="HLR-3201VXB" urn="urn:adsk.eagle:package:15481381/2" type="box" library_version="5" library_locally_modified="yes">
+<package3d name="HLR-3201VXB" urn="urn:adsk.eagle:package:15481381/4" type="model" library_version="7">
 <packageinstances>
 <packageinstance name="HLR-3201VXB"/>
 </packageinstances>
@@ -8550,7 +8550,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1CH-RCA" urn="urn:adsk.eagle:component:15481382/2" prefix="J" library_version="5" library_locally_modified="yes">
+<deviceset name="1CH-RCA" urn="urn:adsk.eagle:component:15481382/4" prefix="J" library_version="7">
 <gates>
 <gate name="G$1" symbol="1CH-RCA" x="0" y="0"/>
 </gates>
@@ -8561,7 +8561,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="SIGNAL" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15481381/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15481381/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -8630,8 +8630,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C3216" package3d_urn="urn:adsk.eagle:package:23628/2" value="10uF/16V"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF/100V"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="J1" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" deviceset="1CH-RCA" device="-HLR-3201VXB" package3d_urn="urn:adsk.eagle:package:15481381/2" value="HLR-3201VXB-004HG"/>
-<part name="J2" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" deviceset="1CH-RCA" device="-HLR-3201VXB" package3d_urn="urn:adsk.eagle:package:15481381/2" value="HLR-3201VXB-003HG"/>
+<part name="J1" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" deviceset="1CH-RCA" device="-HLR-3201VXB" package3d_urn="urn:adsk.eagle:package:15481381/4" value="HLR-3201VXB-004HG"/>
+<part name="J2" library="RCA-jack" library_urn="urn:adsk.eagle:library:15327963" deviceset="1CH-RCA" device="-HLR-3201VXB" package3d_urn="urn:adsk.eagle:package:15481381/4" value="HLR-3201VXB-003HG"/>
 </parts>
 <sheets>
 <sheet>
