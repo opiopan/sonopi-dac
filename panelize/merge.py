@@ -5,9 +5,9 @@ from gerberex import DxfFile, GerberComposition, DrillComposition
 exts = ['GTL', 'GTO', 'GTP', 'GTS', 'GBL', 'GBO', 'GBP', 'GBS', 'TXT']
 boards=[
     ('../pcb/type2/CAMOutputs/sonopi-dac-type2.', 0, 0, 0),
-    ('../pcb/type2/CAMOutputs/sonopi-dac-type2.', 0, 35, 0),
-    ('../pcb/type2/CAMOutputs/sonopi-dac-type2.', 0, 70, 0),
-    ('../pcb/type2/CAMOutputs/sonopi-dac-type2.', 100, 17.5, 90),
+    ('../pcb/type2/CAMOutputs/sonopi-dac-type2.', 0, 34, 0),
+    ('../pcb/type2/CAMOutputs/sonopi-dac-type2.', 0, 68, 0),
+    ('../pcb/type2/CAMOutputs/sonopi-dac-type2.', 99, 16.5, 90),
 ]
 outline = 'outline.dxf'
 mousebites = 'mousebites.dxf'

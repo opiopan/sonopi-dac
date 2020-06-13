@@ -1,6 +1,6 @@
 Sonopi DAC
 ===
-![project phase](https://img.shields.io/badge/project%20phase-Designing%20PCB-orange.svg)
+![project phase](https://img.shields.io/badge/project%20phase-Done-blue.svg)
 
 <p align="center">
 <img alt="board image" src="https://raw.githubusercontent.com/wiki/opiopan/sonopi-dac/images/sonopi-dac-configuration.jpg" width=800>

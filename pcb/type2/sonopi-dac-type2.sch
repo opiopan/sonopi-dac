@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8406,11 +8406,32 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <circle x="-2.159" y="-1.143" radius="0.127" width="0.15" layer="21"/>
 <text x="0" y="1.778" size="1.016" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="3225-SMD-HS" urn="urn:adsk.eagle:footprint:20544450/1" library_version="3" library_locally_modified="yes">
+<smd name="4" x="-1.4" y="0.95" dx="2" dy="1.2" layer="1"/>
+<smd name="1" x="-1.4" y="-0.95" dx="2" dy="1.2" layer="1"/>
+<smd name="2" x="1.4" y="-0.95" dx="2" dy="1.2" layer="1"/>
+<smd name="3" x="1.4" y="0.95" dx="2" dy="1.2" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-0.254" y1="1.25" x2="0.254" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-1.25" x2="0.254" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="0.22" x2="-1.6" y2="-0.22" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.22" x2="1.6" y2="-0.22" width="0.127" layer="21"/>
+<circle x="-2.794" y="-1.143" radius="0.127" width="0.15" layer="21"/>
+<text x="0" y="1.778" size="1.016" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="3225-SMD" urn="urn:adsk.eagle:package:15275963/2" type="model" library_version="2">
 <packageinstances>
 <packageinstance name="3225-SMD"/>
+</packageinstances>
+</package3d>
+<package3d name="3225-SMD-HS" urn="urn:adsk.eagle:package:20544451/2" type="model" library_version="3" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="3225-SMD-HS"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -8429,7 +8450,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OSC" urn="urn:adsk.eagle:component:15275965/2" prefix="X" library_version="2">
+<deviceset name="OSC" urn="urn:adsk.eagle:component:15275965/3" locally_modified="yes" prefix="X" library_version="3" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="OSC" x="0" y="0"/>
 </gates>
@@ -8443,6 +8464,20 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15275963/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3225HS" package="3225-SMD-HS">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20544451/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -8615,11 +8650,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="+3V3/A3" library="supply1" deviceset="+3V3/A" device=""/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="2.2uF/25V"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="470Ω"/>
-<part name="X1" library="oscillator" library_urn="urn:adsk.eagle:library:15275959" deviceset="OSC" device="-3225" package3d_urn="urn:adsk.eagle:package:15275963/2" value="22.5792MHz"/>
+<part name="X1" library="oscillator" library_urn="urn:adsk.eagle:library:15275959" deviceset="OSC" device="-3225HS" package3d_urn="urn:adsk.eagle:package:20544451/2" value="22.5792MHz"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF/100V"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X2" library="oscillator" library_urn="urn:adsk.eagle:library:15275959" deviceset="OSC" device="-3225" package3d_urn="urn:adsk.eagle:package:15275963/2" value="24.576MHz"/>
+<part name="X2" library="oscillator" library_urn="urn:adsk.eagle:library:15275959" deviceset="OSC" device="-3225HS" package3d_urn="urn:adsk.eagle:package:20544451/2" value="24.576MHz"/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF/100V"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
