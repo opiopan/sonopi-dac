@@ -27,7 +27,7 @@ dtoverlay=hifiberry-dacplus-pro
 ## PCB Design
 > [!NOTE]
 > This PCB has been confirmed to work as intended.
-> However, there has been a report of issues with a different artwork based on the schematic below. See issue #1 for details.
+> However, there has been a report of issues with a different artwork based on the schematic below. See [issue #1](#1) for details.
 
 
 <p align="center">
